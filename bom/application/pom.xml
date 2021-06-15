@@ -142,6 +142,7 @@
         <jboss-logging.version>3.4.2.Final</jboss-logging.version>
         <mutiny.version>0.17.0</mutiny.version>
         <kafka2.version>2.8.0</kafka2.version>
+        <couchbase.version>3.1.6</couchbase.version>
         <zookeeper.version>3.5.7</zookeeper.version>
         <!-- Scala is used by Kafka so we need to choose a compatible version -->
         <scala.version>2.12.13</scala.version>
@@ -3631,6 +3632,11 @@
                 <groupId>org.apache.kafka</groupId>
                 <artifactId>kafka-clients</artifactId>
                 <version>${kafka2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.couchbase.client</groupId>
+                <artifactId>java-client</artifactId>
+                <version>${couchbase.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.avro</groupId>
