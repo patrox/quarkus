@@ -20,7 +20,7 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-core-parent</artifactId>
+            <artifactId>quarkus-core-deployment</artifactId>
         </dependency>
     </dependencies>
 
