@@ -1,10 +1,12 @@
 ---
 artifact: ${project.groupId}:${project.artifactId}:${project.version}
-name: "Apache Kafka Client"
+name: "Couchbase Client"
 metadata:
   keywords:
-  - "kafka"
-  guide: "https://quarkus.io/guides/kafka"
+  - "couchbase"
+  - "nosql"
+  - "datastore"
+  guide: "https://quarkus.io/guides/couchbase"
   categories:
-  - "messaging"
+    - "data"
   status: "stable"
