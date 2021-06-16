@@ -1,4 +1,4 @@
-package io.quarkus.kafka.client.health;
+package io.quarkus.couchbase.client.health;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,7 +20,7 @@ import io.smallrye.common.annotation.Identifier;
 
 @Readiness
 @ApplicationScoped
-public class KafkaHealthCheck implements HealthCheck {
+public class CouchbaseHealthCheck implements HealthCheck {
 
     @Inject
     @Identifier("default-kafka-broker")
