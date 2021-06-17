@@ -5,7 +5,7 @@ import io.quarkus.runtime.annotations.ConfigGroup;
 import io.quarkus.runtime.annotations.ConfigItem;
 import io.quarkus.runtime.annotations.ConfigPhase;
 import io.quarkus.runtime.annotations.ConfigRoot;
-import org.neo4j.driver.Config;
+//import org.neo4j.driver.Config;
 
 import java.io.File;
 import java.nio.file.Path;
