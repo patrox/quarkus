@@ -1,5 +1,9 @@
 package io.quarkus.couchbase.client.deployment;
 
+import io.quarkus.runtime.annotations.ConfigItem;
+import io.quarkus.runtime.annotations.ConfigPhase;
+import io.quarkus.runtime.annotations.ConfigRoot;
+
 @ConfigRoot(name = "couchbase", phase = ConfigPhase.BUILD_TIME)
 public class CouchbaseBuildTimeConfig {
     /**

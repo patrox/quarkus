@@ -149,7 +149,8 @@ public enum Feature {
     VERTX,
     VERTX_WEB,
     VERTX_GRAPHQL,
-    WEBJARS_LOCATOR;
+    WEBJARS_LOCATOR,
+    COUCHBASE;
 
     public String getName() {
         return toString().toLowerCase().replace("_", "-");
