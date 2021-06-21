@@ -1,10 +1,10 @@
 package io.quarkus.couchbase.client;
 
-import com.couchbase.client.java.Cluster;
-
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
 import javax.inject.Singleton;
+
+import com.couchbase.client.java.Cluster;
 
 @ApplicationScoped
 public class CouchbaseProducer {
