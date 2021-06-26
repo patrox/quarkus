@@ -42,17 +42,18 @@ public class ContainerLocator {
         return null;
     }
 
-    public String locateContainer(String serviceName) {
+    public ContainerAddress locateContainer(String serviceName) {
         Container container = lookup(serviceName);
         if (container != null) {
             ContainerPort containerPort = getMappedPort(container, port);
             if (containerPort != null) {
-                String url = containerPort.getIp() + ":" + containerPort.getPublicPort();
+                final ContainerAddress containerAddress = new ContainerAddress(containerPort.getIp(),
+                        containerPort.getPublicPort());
                 log.infof("Dev Services container locator found: %s (%s). "
                         + "Connecting to: %s.",
                         container.getId(),
-                        container.getImage(), url);
-                return url;
+                        container.getImage(), containerAddress.getUrl());
+                return containerAddress;
             }
         }
         return null;
