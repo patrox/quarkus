@@ -2,8 +2,8 @@ package io.quarkus.micrometer.deployment.binder;
 
 import java.util.function.BooleanSupplier;
 
-import javax.inject.Singleton;
-import javax.servlet.DispatcherType;
+import jakarta.inject.Singleton;
+import jakarta.servlet.DispatcherType;
 
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.arc.deployment.SyntheticBeanBuildItem;

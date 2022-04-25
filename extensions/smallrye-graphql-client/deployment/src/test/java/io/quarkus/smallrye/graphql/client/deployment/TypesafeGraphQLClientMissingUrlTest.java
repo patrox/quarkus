@@ -2,8 +2,8 @@ package io.quarkus.smallrye.graphql.client.deployment;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import javax.enterprise.inject.Instance;
-import javax.inject.Inject;
+import jakarta.enterprise.inject.Instance;
+import jakarta.inject.Inject;
 
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.junit.jupiter.api.Test;

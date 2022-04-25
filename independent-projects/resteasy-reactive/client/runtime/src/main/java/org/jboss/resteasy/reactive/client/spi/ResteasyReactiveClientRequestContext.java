@@ -1,7 +1,7 @@
 package org.jboss.resteasy.reactive.client.spi;
 
 import io.vertx.core.Context;
-import javax.ws.rs.client.ClientRequestContext;
+import jakarta.ws.rs.client.ClientRequestContext;
 
 public interface ResteasyReactiveClientRequestContext extends ClientRequestContext {
 

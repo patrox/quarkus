@@ -2,8 +2,8 @@ package io.quarkus.rest.data.panache.deployment.methods.hal;
 
 import static io.quarkus.gizmo.MethodDescriptor.ofMethod;
 
-import javax.validation.Valid;
-import javax.ws.rs.core.Response;
+import jakarta.validation.Valid;
+import jakarta.ws.rs.core.Response;
 
 import io.quarkus.gizmo.ClassCreator;
 import io.quarkus.gizmo.FieldDescriptor;

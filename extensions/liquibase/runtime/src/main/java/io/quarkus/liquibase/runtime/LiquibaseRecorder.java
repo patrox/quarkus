@@ -2,8 +2,8 @@ package io.quarkus.liquibase.runtime;
 
 import java.util.function.Supplier;
 
-import javax.enterprise.inject.Any;
-import javax.enterprise.inject.UnsatisfiedResolutionException;
+import jakarta.enterprise.inject.Any;
+import jakarta.enterprise.inject.UnsatisfiedResolutionException;
 import javax.sql.DataSource;
 
 import io.quarkus.agroal.runtime.DataSources;

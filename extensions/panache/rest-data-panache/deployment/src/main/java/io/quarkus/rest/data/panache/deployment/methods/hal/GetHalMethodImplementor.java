@@ -2,7 +2,7 @@ package io.quarkus.rest.data.panache.deployment.methods.hal;
 
 import static io.quarkus.gizmo.MethodDescriptor.ofMethod;
 
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response;
 
 import io.quarkus.gizmo.BranchResult;
 import io.quarkus.gizmo.BytecodeCreator;

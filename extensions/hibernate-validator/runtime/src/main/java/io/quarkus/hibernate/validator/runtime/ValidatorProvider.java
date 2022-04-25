@@ -1,10 +1,10 @@
 package io.quarkus.hibernate.validator.runtime;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.inject.Produces;
-import javax.inject.Named;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.inject.Produces;
+import jakarta.inject.Named;
+import jakarta.validation.Validator;
+import jakarta.validation.ValidatorFactory;
 
 @ApplicationScoped
 public class ValidatorProvider {

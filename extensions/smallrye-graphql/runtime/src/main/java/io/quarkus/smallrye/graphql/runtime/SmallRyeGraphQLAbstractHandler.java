@@ -2,10 +2,10 @@ package io.quarkus.smallrye.graphql.runtime;
 
 import java.io.StringReader;
 
-import javax.json.Json;
-import javax.json.JsonObject;
-import javax.json.JsonReader;
-import javax.json.JsonReaderFactory;
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonReader;
+import jakarta.json.JsonReaderFactory;
 
 import io.quarkus.arc.Arc;
 import io.quarkus.arc.ManagedContext;

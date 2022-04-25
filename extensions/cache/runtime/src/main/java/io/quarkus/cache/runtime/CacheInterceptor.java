@@ -8,9 +8,9 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.function.Supplier;
 
-import javax.inject.Inject;
-import javax.interceptor.Interceptor.Priority;
-import javax.interceptor.InvocationContext;
+import jakarta.inject.Inject;
+import jakarta.interceptor.Interceptor.Priority;
+import jakarta.interceptor.InvocationContext;
 
 import org.jboss.logging.Logger;
 

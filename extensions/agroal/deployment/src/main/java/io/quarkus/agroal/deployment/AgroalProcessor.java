@@ -8,8 +8,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Optional;
 
-import javax.enterprise.inject.Default;
-import javax.inject.Singleton;
+import jakarta.enterprise.inject.Default;
+import jakarta.inject.Singleton;
 import javax.sql.XADataSource;
 
 import org.jboss.jandex.DotName;

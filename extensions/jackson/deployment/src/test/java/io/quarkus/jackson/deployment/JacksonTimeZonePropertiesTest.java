@@ -3,7 +3,7 @@ package io.quarkus.jackson.deployment;
 import java.util.Calendar;
 import java.util.Date;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

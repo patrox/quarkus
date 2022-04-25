@@ -3,8 +3,8 @@ package io.quarkus.smallrye.graphql.runtime;
 import java.util.List;
 import java.util.function.Consumer;
 
-import javax.enterprise.inject.Instance;
-import javax.enterprise.inject.spi.CDI;
+import jakarta.enterprise.inject.Instance;
+import jakarta.enterprise.inject.spi.CDI;
 
 import graphql.schema.GraphQLSchema;
 import io.quarkus.arc.runtime.BeanContainer;

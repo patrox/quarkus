@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import javax.inject.Inject;
-import javax.ws.rs.container.ContainerResponseContext;
-import javax.ws.rs.core.MediaType;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.container.ContainerResponseContext;
+import jakarta.ws.rs.core.MediaType;
 
 import org.jboss.resteasy.reactive.server.ServerResponseFilter;
 import org.jboss.resteasy.reactive.server.spi.ResteasyReactiveContainerRequestContext;
@@ -35,12 +35,12 @@ public class TemplateResponseFilter {
         TemplateInstance instance = (TemplateInstance) entity;
         Object variantsAttr = instance.getAttribute(TemplateInstance.VARIANTS);
         if (variantsAttr != null) {
-            List<javax.ws.rs.core.Variant> variants = new ArrayList<>();
+            List<jakarta.ws.rs.core.Variant> variants = new ArrayList<>();
             for (Variant variant : (List<Variant>) variantsAttr) {
-                variants.add(new javax.ws.rs.core.Variant(MediaType.valueOf(variant.getMediaType()), variant.getLocale(),
+                variants.add(new jakarta.ws.rs.core.Variant(MediaType.valueOf(variant.getMediaType()), variant.getLocale(),
                         variant.getEncoding()));
             }
-            javax.ws.rs.core.Variant selected = requestContext.getRequest()
+            jakarta.ws.rs.core.Variant selected = requestContext.getRequest()
                     .selectVariant(variants);
 
             if (selected != null) {

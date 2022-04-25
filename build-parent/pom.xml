@@ -527,14 +527,15 @@
                                             <exclude>org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.1_spec</exclude>
                                             <exclude>org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec</exclude>
                                             -->
-                                            <exclude>jakarta.xml.bind:jakarta.xml.bind-api</exclude>
+                                            <exclude>org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec</exclude>
                                             <exclude>jakarta.ws.rs:jakarta.ws.rs-api</exclude>
+                                            <exclude>org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.1_spec</exclude>
                                             <!-- Exclude javax dependencies in favor of Jakarta -->
                                             <exclude>javax.activation:activation</exclude>
                                             <exclude>javax.activation:javax.activation-api</exclude>
-                                            <exclude>javax.annotation:javax.annotation-api</exclude>
+                                            <!-- we allow javax.annotation-api for Maven -->
                                             <exclude>javax.enterprise:cdi-api</exclude>
-                                            <exclude>javax.inject:javax.inject</exclude>
+                                            <!-- we allow javax.inject for Maven -->
                                             <exclude>javax.json:javax.json-api</exclude>
                                             <exclude>javax.json.bind:javax.json.bind-api</exclude>
                                             <exclude>org.glassfish:javax.json</exclude>

@@ -78,6 +78,10 @@
             <artifactId>resteasy-json-binding-provider</artifactId>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy.microprofile</groupId>
+            <artifactId>microprofile-config</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

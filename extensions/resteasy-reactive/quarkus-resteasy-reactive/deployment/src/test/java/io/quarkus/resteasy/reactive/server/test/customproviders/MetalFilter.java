@@ -1,6 +1,6 @@
 package io.quarkus.resteasy.reactive.server.test.customproviders;
 
-import javax.ws.rs.container.ContainerRequestContext;
+import jakarta.ws.rs.container.ContainerRequestContext;
 
 import org.jboss.resteasy.reactive.server.ServerRequestFilter;
 

@@ -1,6 +1,6 @@
 package io.quarkus.smallrye.openapi.test.jaxrs;
 
-import javax.ws.rs.Path;
+import jakarta.ws.rs.Path;
 
 @Path("/address")
 public class AutoTagResource implements AbstractAutoTagResource<String> {

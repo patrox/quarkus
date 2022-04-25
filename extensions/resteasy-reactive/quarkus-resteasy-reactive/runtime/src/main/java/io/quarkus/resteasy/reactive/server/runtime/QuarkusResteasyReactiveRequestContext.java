@@ -1,7 +1,7 @@
 package io.quarkus.resteasy.reactive.server.runtime;
 
-import javax.enterprise.event.Event;
-import javax.ws.rs.core.SecurityContext;
+import jakarta.enterprise.event.Event;
+import jakarta.ws.rs.core.SecurityContext;
 
 import org.jboss.resteasy.reactive.server.core.Deployment;
 import org.jboss.resteasy.reactive.server.jaxrs.ProvidersImpl;

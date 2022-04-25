@@ -26,9 +26,9 @@ public final class ServletMissing implements BooleanSupplier {
     @Override
     public boolean getAsBoolean() {
         try {
-            Class.forName("javax.servlet.ServletConfig");
-            Class.forName("javax.servlet.ServletContext");
-            Class.forName("javax.servlet.FilterConfig");
+            Class.forName("jakarta.servlet.ServletConfig");
+            Class.forName("jakarta.servlet.ServletContext");
+            Class.forName("jakarta.servlet.FilterConfig");
             Class.forName("io.quarkus.undertow.runtime.UndertowDeploymentRecorder");
             return false;
         } catch (ClassNotFoundException e) {

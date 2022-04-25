@@ -18,7 +18,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.function.Predicate;
 
-import javax.enterprise.inject.spi.DeploymentException;
+import jakarta.enterprise.inject.spi.DeploymentException;
 
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.ConfigProvider;
@@ -316,7 +316,7 @@ public class GrpcServerProcessor {
         }
         if (!bean.getScope().getDotName().equals(BuiltinScope.SINGLETON.getName())) {
             errors.produce(new ValidationPhaseBuildItem.ValidationErrorBuildItem(
-                    new IllegalStateException("A gRPC service bean must have the javax.inject.Singleton scope: " + bean)));
+                    new IllegalStateException("A gRPC service bean must have the jakarta.inject.Singleton scope: " + bean)));
         }
     }
 

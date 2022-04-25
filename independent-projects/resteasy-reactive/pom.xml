@@ -35,25 +35,27 @@
     </scm>
 
     <properties>
+        <jakarta.xml.bind-api.version>3.0.1</jakarta.xml.bind-api.version>
+        <jboss-jaxrs-api_3.0_spec.version>1.0.1.Final</jboss-jaxrs-api_3.0_spec.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>11</maven.compiler.target>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.release>11</maven.compiler.release>
         <!-- Versions -->
-        <jakarta.enterprise.cdi-api.version>2.0.2</jakarta.enterprise.cdi-api.version>
+        <jakarta.enterprise.cdi-api.version>3.0.0</jakarta.enterprise.cdi-api.version>
         <jandex.version>2.4.2.Final</jandex.version>
         <junit5.version>5.8.2</junit5.version>
         <maven.version>3.8.4</maven.version>
         <assertj.version>3.22.0</assertj.version>
         <jboss-logging.version>3.4.3.Final</jboss-logging.version>
-        <jakarta.annotation-api.version>1.3.5</jakarta.annotation-api.version>
+        <jakarta.annotation-api.version>2.0.0</jakarta.annotation-api.version>
         <gizmo.version>1.0.10.Final</gizmo.version>
-        <jakarta.persistence-api.version>2.2.3</jakarta.persistence-api.version>
+        <jakarta.persistence-api.version>3.0.0</jakarta.persistence-api.version>
 
         <version.surefire.plugin>3.0.0-M5</version.surefire.plugin>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
         <jboss-jaxrs-api_2.1_spec.version>2.0.1.Final</jboss-jaxrs-api_2.1_spec.version>
-        <jakarta.json.version>1.1.6</jakarta.json.version>
+        <jakarta.json.version>2.0.0</jakarta.json.version>
         <mutiny.version>1.4.0</mutiny.version>
         <smallrye-common.version>1.11.0</smallrye-common.version>
         <vertx.version>4.2.4</vertx.version>
@@ -62,9 +64,9 @@
         <jboss-jaxb-api_2.3_spec.version>2.0.0.Final</jboss-jaxb-api_2.3_spec.version>
         <jackson-bom.version>2.13.2.20220328</jackson-bom.version>
         <smallrye-stork.version>1.1.0</smallrye-stork.version>
-        <jakarta.validation-api.version>2.0.2</jakarta.validation-api.version>
-        <yasson.version>1.0.11</yasson.version>
-        <jakarta.json.bind-api.version>1.0.2</jakarta.json.bind-api.version>
+        <jakarta.validation-api.version>3.0.1</jakarta.validation-api.version>
+        <yasson.version>2.0.4</yasson.version>
+        <jakarta.json.bind-api.version>2.0.0</jakarta.json.bind-api.version>
         <awaitility.version>4.2.0</awaitility.version>
         <smallrye-mutiny-vertx-core.version>2.19.0</smallrye-mutiny-vertx-core.version>
     </properties>
@@ -158,6 +160,11 @@
                 <groupId>org.jboss.spec.javax.ws.rs</groupId>
                 <artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
                 <version>${jboss-jaxrs-api_2.1_spec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.spec.javax.ws.rs</groupId>
+                <artifactId>jboss-jaxrs-api_3.0_spec</artifactId>
+                <version>${jboss-jaxrs-api_3.0_spec.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.glassfish</groupId>
@@ -333,6 +340,11 @@
                 <groupId>jakarta.validation</groupId>
                 <artifactId>jakarta.validation-api</artifactId>
                 <version>${jakarta.validation-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.xml.bind</groupId>
+                <artifactId>jakarta.xml.bind-api</artifactId>
+                <version>${jakarta.xml.bind-api.version}</version>
             </dependency>
         </dependencies>
 

@@ -3,9 +3,9 @@ package io.quarkus.security.runtime.interceptor;
 import java.util.concurrent.CompletionStage;
 import java.util.function.Function;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
-import javax.interceptor.InvocationContext;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
+import jakarta.interceptor.InvocationContext;
 
 import io.smallrye.mutiny.Multi;
 import io.smallrye.mutiny.Uni;

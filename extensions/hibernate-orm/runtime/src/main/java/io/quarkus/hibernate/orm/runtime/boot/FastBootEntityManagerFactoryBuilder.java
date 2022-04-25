@@ -3,9 +3,9 @@ package io.quarkus.hibernate.orm.runtime.boot;
 import java.io.Serializable;
 import java.security.NoSuchAlgorithmException;
 
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityNotFoundException;
-import javax.persistence.PersistenceException;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityNotFoundException;
+import jakarta.persistence.PersistenceException;
 import javax.sql.DataSource;
 
 import org.hibernate.Interceptor;

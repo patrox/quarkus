@@ -2,10 +2,10 @@ package io.quarkus.resteasy.reactive.qute.deployment;
 
 import java.util.Map;
 
-import javax.inject.Inject;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.QueryParam;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.QueryParam;
 
 import io.quarkus.qute.CheckedTemplate;
 import io.quarkus.qute.Template;

@@ -3,8 +3,8 @@ package io.quarkus.hibernate.search.orm.elasticsearch;
 import java.util.List;
 import java.util.function.Supplier;
 
-import javax.enterprise.inject.Default;
-import javax.inject.Singleton;
+import jakarta.enterprise.inject.Default;
+import jakarta.inject.Singleton;
 
 import org.hibernate.search.mapper.orm.mapping.SearchMapping;
 import org.hibernate.search.mapper.orm.session.SearchSession;

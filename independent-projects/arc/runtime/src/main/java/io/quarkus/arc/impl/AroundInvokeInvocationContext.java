@@ -1,5 +1,6 @@
 package io.quarkus.arc.impl;
 
+import jakarta.interceptor.InvocationContext;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -7,7 +8,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
-import javax.interceptor.InvocationContext;
 
 /**
  * Special type of InvocationContext for AroundInvoke interceptors.

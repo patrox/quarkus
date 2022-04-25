@@ -8,13 +8,13 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import javax.enterprise.context.Dependent;
-import javax.enterprise.inject.spi.ObserverMethod;
+import jakarta.enterprise.context.Dependent;
+import jakarta.enterprise.inject.spi.ObserverMethod;
 
 /**
  * This annotation can be used to initialize a CDI bean at application startup. The behavior is similar to a declaration of an
  * observer of the {@link StartupEvent} - a contextual instance is created and lifecycle callbacks (such as
- * {@link javax.annotation.PostConstruct}) are invoked. In fact, a synthetic observer of the {@link StartupEvent} is generated
+ * {@link jakarta.annotation.PostConstruct}) are invoked. In fact, a synthetic observer of the {@link StartupEvent} is generated
  * for each bean annotated with this annotation. Furthermore, {@link #value()} can be used to specify the priority of the
  * generated observer method and thus affect observers ordering.
  * <p>
@@ -45,7 +45,7 @@ public @interface Startup {
     /**
      *
      * @return the priority
-     * @see javax.annotation.Priority
+     * @see jakarta.annotation.Priority
      */
     int value() default ObserverMethod.DEFAULT_PRIORITY;
 

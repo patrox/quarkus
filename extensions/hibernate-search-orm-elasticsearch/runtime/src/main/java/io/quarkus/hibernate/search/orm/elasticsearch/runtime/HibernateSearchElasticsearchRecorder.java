@@ -11,7 +11,7 @@ import java.util.Optional;
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;
 
-import javax.enterprise.inject.literal.NamedLiteral;
+import jakarta.enterprise.inject.literal.NamedLiteral;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

@@ -2,9 +2,9 @@ package io.quarkus.rest.data.panache.runtime.hal;
 
 import java.util.Map;
 
-import javax.json.bind.serializer.JsonbSerializer;
-import javax.json.bind.serializer.SerializationContext;
-import javax.json.stream.JsonGenerator;
+import jakarta.json.bind.serializer.JsonbSerializer;
+import jakarta.json.bind.serializer.SerializationContext;
+import jakarta.json.stream.JsonGenerator;
 
 public class HalCollectionWrapperJsonbSerializer implements JsonbSerializer<HalCollectionWrapper> {
 

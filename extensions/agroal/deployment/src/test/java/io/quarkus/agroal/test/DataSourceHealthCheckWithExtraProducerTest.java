@@ -11,8 +11,8 @@ import java.sql.SQLException;
 import java.sql.SQLFeatureNotSupportedException;
 import java.util.logging.Logger;
 
-import javax.enterprise.inject.Produces;
-import javax.inject.Qualifier;
+import jakarta.enterprise.inject.Produces;
+import jakarta.inject.Qualifier;
 import javax.sql.DataSource;
 
 import org.hamcrest.CoreMatchers;

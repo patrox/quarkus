@@ -3,9 +3,9 @@ package io.quarkus.hibernate.search.elasticsearch.test.configuration;
 import static io.quarkus.hibernate.search.elasticsearch.test.util.TransactionUtils.inTransaction;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import javax.enterprise.context.control.ActivateRequestContext;
-import javax.inject.Inject;
-import javax.transaction.UserTransaction;
+import jakarta.enterprise.context.control.ActivateRequestContext;
+import jakarta.inject.Inject;
+import jakarta.transaction.UserTransaction;
 
 import org.hibernate.Session;
 import org.hibernate.search.backend.elasticsearch.ElasticsearchExtension;

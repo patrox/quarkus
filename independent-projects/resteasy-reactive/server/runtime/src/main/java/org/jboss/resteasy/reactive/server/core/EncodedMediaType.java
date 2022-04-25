@@ -1,6 +1,6 @@
 package org.jboss.resteasy.reactive.server.core;
 
-import javax.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.MediaType;
 import org.jboss.resteasy.reactive.server.spi.ContentType;
 
 /**

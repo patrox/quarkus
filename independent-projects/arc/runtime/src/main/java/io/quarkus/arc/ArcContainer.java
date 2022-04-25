@@ -1,15 +1,15 @@
 package io.quarkus.arc;
 
+import jakarta.enterprise.context.ContextNotActiveException;
+import jakarta.enterprise.inject.Instance;
+import jakarta.enterprise.inject.spi.BeanManager;
+import jakarta.enterprise.util.TypeLiteral;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.function.Supplier;
-import javax.enterprise.context.ContextNotActiveException;
-import javax.enterprise.inject.Instance;
-import javax.enterprise.inject.spi.BeanManager;
-import javax.enterprise.util.TypeLiteral;
 
 /**
  * Represents a container instance.
@@ -20,7 +20,7 @@ public interface ArcContainer {
 
     /**
      * Unlike {@link BeanManager#getContext(Class)} this method does not throw
-     * {@link javax.enterprise.context.ContextNotActiveException} if there is no active context for the given
+     * {@link jakarta.enterprise.context.ContextNotActiveException} if there is no active context for the given
      * scope.
      *
      * @param scopeType
@@ -153,7 +153,7 @@ public interface ArcContainer {
     /**
      * This method never throws {@link ContextNotActiveException}.
      *
-     * @return the built-in context for {@link javax.enterprise.context.RequestScoped}
+     * @return the built-in context for {@link jakarta.enterprise.context.RequestScoped}
      */
     ManagedContext requestContext();
 

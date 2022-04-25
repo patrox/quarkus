@@ -2,7 +2,7 @@ package io.quarkus.resteasy.reactive.jaxb.common.deployment;
 
 import java.util.Collections;
 
-import javax.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.MediaType;
 
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildProducer;

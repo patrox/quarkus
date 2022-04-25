@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.List;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.h2.jdbc.JdbcSQLException;
 import org.junit.jupiter.api.DisplayName;
