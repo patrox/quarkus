@@ -880,7 +880,7 @@ public class OidcTenantConfig extends OidcCommonConfig {
         }
 
         // Source of the principal roles
-        public static enum Source {
+        public enum Source {
             /**
              * ID Token - the default value for the `web-app` applications.
              */
@@ -1536,7 +1536,7 @@ public class OidcTenantConfig extends OidcCommonConfig {
     /**
      * Supported asymmetric signature algorithms
      */
-    public static enum SignatureAlgorithm {
+    public enum SignatureAlgorithm {
         RS256,
         RS384,
         RS512,
@@ -1548,8 +1548,8 @@ public class OidcTenantConfig extends OidcCommonConfig {
         ES512,
         EDDSA;
 
-        private static String EDDSA_ALG = "EDDSA";
-        private static String REQUIRED_EDDSA_ALG = "EdDSA";
+        private static final String EDDSA_ALG = "EDDSA";
+        private static final String REQUIRED_EDDSA_ALG = "EdDSA";
 
         public String getAlgorithm() {
             String name = name();
@@ -1563,13 +1563,13 @@ public class OidcTenantConfig extends OidcCommonConfig {
         public static Token fromIssuer(String issuer) {
             Token tokenClaims = new Token();
             tokenClaims.issuer = Optional.of(issuer);
-            tokenClaims.audience = Optional.ofNullable(null);
+            tokenClaims.audience = Optional.empty();
             return tokenClaims;
         }
 
         public static Token fromAudience(String... audience) {
             Token tokenClaims = new Token();
-            tokenClaims.issuer = Optional.ofNullable(null);
+            tokenClaims.issuer = Optional.empty();
             tokenClaims.audience = Optional.of(Arrays.asList(audience));
             return tokenClaims;
         }
@@ -1956,7 +1956,7 @@ public class OidcTenantConfig extends OidcCommonConfig {
         }
     }
 
-    public static enum ApplicationType {
+    public enum ApplicationType {
         /**
          * A {@code WEB_APP} is a client that serves pages, usually a front-end application. For this type of client the
          * Authorization Code Flow is defined as the preferred method for authenticating users.
@@ -1984,7 +1984,7 @@ public class OidcTenantConfig extends OidcCommonConfig {
     @ConfigItem
     public Optional<Provider> provider = Optional.empty();
 
-    public static enum Provider {
+    public enum Provider {
         APPLE,
         DISCORD,
         FACEBOOK,
@@ -1998,7 +1998,9 @@ public class OidcTenantConfig extends OidcCommonConfig {
         TWITCH,
         TWITTER,
         // New name for Twitter
-        X
+        X,
+
+        SLACK
     }
 
     public Optional<Provider> getProvider() {

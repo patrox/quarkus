@@ -23,6 +23,7 @@ public class KnownOidcProviders {
             case STRAVA -> strava();
             case TWITCH -> twitch();
             case TWITTER, X -> twitter();
+            case SLACK -> slack();
         };
     }
 
@@ -199,6 +200,30 @@ public class KnownOidcProviders {
         ret.getAuthentication().setIdTokenRequired(false);
         ret.getToken().setVerifyAccessTokenWithUserInfo(true);
         ret.setUserInfoPath("https://discord.com/api/users/@me");
+        return ret;
+    }
+
+    private static OidcTenantConfig slack() {
+        // Ref https://api.slack.com/authentication/sign-in-with-slack
+        OidcTenantConfig ret = new OidcTenantConfig();
+        ret.setAuthServerUrl("https://slack.com/oauth/v2");
+        ret.setApplicationType(OidcTenantConfig.ApplicationType.WEB_APP);
+
+        ret.setAuthorizationPath("authorize");
+
+        // https://api.slack.com/authentication/oauth-v2#exchanging
+
+        /*
+        ret.setTokenPath("access_token");
+        ret.setUserInfoPath("https://api.github.com/user");
+        ret.getAuthentication().setScopes(List.of("user:email"));
+        ret.getAuthentication().setUserInfoRequired(true);
+        ret.getAuthentication().setIdTokenRequired(false);
+        ret.getToken().setVerifyAccessTokenWithUserInfo(true);
+        ret.getToken().setPrincipalClaim("name");
+
+         */
+        // https://slack.com/api/users.info
         return ret;
     }
 }
